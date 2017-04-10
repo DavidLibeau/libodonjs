@@ -33,7 +33,6 @@
 			let endpoint = ''
 			switch(target){
 				case 'home': endpoint = '/api/v1/timelines/home'; break
-				case 'mentions': endpoint = '/api/v1/timelines/mentions'; break
 				case 'public': endpoint = '/api/v1/timelines/public'; break
 				default:
 					if(target.substring(0,1)=='#')
