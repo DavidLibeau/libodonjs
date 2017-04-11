@@ -61,6 +61,7 @@
 		context(id){return get_request('/api/v1/statuses/'+id+'/context')}
 		reblogged_by(id){return get_request('/api/v1/statuses/'+id+'/reblogged_by')}
 		favourited_by(id){return get_request('/api/v1/statuses/'+id+'/favourited_by')}
+		search(q){return get_request('/api/v1/search?q='+q)}
 
 		follow_remote(url){return post_request('/api/v1/follows',{uri:url})}
 		reblog(id){return post_request('/api/v1/statuses/'+id+'/reblog')}
